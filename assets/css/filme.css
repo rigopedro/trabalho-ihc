@@ -20,7 +20,7 @@ main {
 }
 
 .movie-detail {
-  display: flex;
+  display: flex; 
   gap: 24px;
   align-items: center;
   padding: 0 120px;
@@ -152,4 +152,5 @@ header, nav {
   .navbar-signin:hover span {
     color: var(--light-azure);
   }
+  
   
