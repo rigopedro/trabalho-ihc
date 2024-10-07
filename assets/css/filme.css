@@ -17,6 +17,7 @@ main {
   height: 350px; 
   margin-bottom: 20px;
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 .movie-info {
