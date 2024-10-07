@@ -75,6 +75,7 @@ main {
     width: 100%; 
     height: 100%; 
     object-fit: cover;
+    transition: transform 0.5s ease;
 }
 
 header, nav { 
@@ -198,4 +199,26 @@ header, nav {
     color: var(--light-azure);
   }
   
+  .movie-banner:hover .banner-img {
+    transform: scale(1.1);
+}
+
+.movie-banner .play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.movie-banner:hover .play {
+    opacity: 1;
+}
+
+.play ion-icon {
+    font-size: 60px;
+    color: white;
+}
+
   
