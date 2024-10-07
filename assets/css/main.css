@@ -254,6 +254,11 @@
  
    cursor: pointer;
  }
+
+ .movie-card-link {
+  text-decoration: none;
+  color: inherit;
+}
  
  .movie-card .card-head {
    position: relative;
