@@ -14,13 +14,15 @@ const movieBanner = document.querySelector('.movie-banner');
 movieBanner.style.position = 'relative';
 movieBanner.appendChild(video);
 
-bannerImage.addEventListener('mouseenter', () => {
-    video.style.display = 'block'; 
-    video.play();
+bannerImage.addEventListener('click', async () => {
+    await video.requestFullscreen()
+    video.style.display = 'block';
+    await video.play();
 });
 
-bannerImage.addEventListener('mouseleave', () => {
-    video.pause(); 
-    video.currentTime = 0; 
-    video.style.display = 'none';
+video.addEventListener('fullscreenchange', () => {
+    if (!document.fullscreenElement) {
+        video.pause()
+        video.style.display = 'none'
+    }
 });
