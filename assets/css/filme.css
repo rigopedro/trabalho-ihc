@@ -13,10 +13,32 @@ main {
 .movie-banner {
   position: relative; 
   overflow: hidden; 
-  border-radius: 20px; 
-  height: 300px; 
+  border-radius: 20px;
+  height: 350px; 
   margin-bottom: 20px;
   flex-shrink: 0;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.movie-rating {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.cast {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.movie-meta {
+  font-weight: 600;
 }
 
 .movie-detail {
