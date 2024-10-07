@@ -26,6 +26,28 @@ main {
   padding: 0 120px;
 }
 
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.movie-rating {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.cast {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.movie-meta {
+  font-weight: 600;
+}
+
 .banner-img {
     width: 100%; 
     height: 100%; 
